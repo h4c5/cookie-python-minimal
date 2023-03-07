@@ -1,0 +1,8 @@
+{
+    "project_name": "python-template",
+    "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "package_version": "0.1.0",
+    "user_name": "user_name",
+    "user_mail": "user_mail",
+    "user_github": "user_github"
+}

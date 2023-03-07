@@ -1,0 +1,17 @@
+# IDE
+.idea
+.vscode
+.venv
+
+# pycache
+__pycache__
+*.pyc
+
+# Tests
+.coverage
+
+# Packaging
+dist/**
+build/**
+**/*egg-info*
+_version.py

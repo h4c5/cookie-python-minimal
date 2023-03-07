@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{cookiecutter.project_name}}"
+description = "{{cookiecutter.project_name}} description"
+authors = [
+    { name = "{{cookiecutter.user_name}}", email = "{{cookiecutter.user_mail}}" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8,<4.0"
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
+# homepage = ""
+# documentation = ""
+# repository = ""
+# "Bug Tracker" = ""
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+write_to = "src/{{cookiecutter.package_name}}/_version.py"
+
+dev = ["build", "twine"]
+
+[project.scripts]
