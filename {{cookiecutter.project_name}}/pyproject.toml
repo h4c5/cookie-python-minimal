@@ -26,6 +26,7 @@ where = ["src"]
 [tool.setuptools_scm]
 write_to = "src/{{cookiecutter.package_name}}/_version.py"
 
+[project.optional-dependencies]
 dev = ["build", "twine"]
 
 [project.scripts]
